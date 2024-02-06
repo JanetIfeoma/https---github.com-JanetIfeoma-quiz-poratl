@@ -602,12 +602,53 @@ margin-bottom: 24px;
     margin-left: 30px;
 }
 
-
-
-
-
-
-
+/* create quiz2 */
+.question-number-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px; 
+    gap: 10px;
+}
+.question-number-box #num{
+    border-radius: 50%;
+    background-color:#A7D252;
+    padding: 10px 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.question-number-box #disabled-num{
+    color: #333;
+    border-radius: 50%;
+    background-color:#0000001A;
+    padding: 10px 16px;
+    
+    text-align: center;
+    font-size: 16px;
+    
+}
+a{
+    text-decoration: none;
+}
+.col2 .container .answer-options{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container .answer-options #ans-opt{
+    border: 1px solid #0000000D;
+    padding:10px 19.5% 10px 10px;
+    font-size: 16px;
+}
+ 
+.col3{
+    text-align: right;
+    display: flex;
+    width: 164px;
+    flex-direction: column;
+    font-family: var(--font-family1);
+    border-left: 1px solid #0000000D;
+}
 
 
 
