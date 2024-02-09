@@ -656,6 +656,78 @@ a{
     border-left: 1px solid #0000000D;
 }
 
+/* quiz preview2 */
+
+
+#progress-bar-container {
+    width: 100%;
+    height: 2px;
+    background-color:rgb(238, 236, 236);
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0; 
+    background-color:var(--main-color);
+    border-radius: 10px;
+    transition: width 0.3s; 
+}
+#question-counter {
+    font-size: 12px;
+    color:var(--text-color);
+    padding:0 15px ;
+    text-align: left;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: 0.36px;
+}
+#quiz-container h1{
+    font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+
+
+#quiz-container h2,#review-question{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 148.891%;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.option{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+    border: 1px solid rgb(232, 231, 231);
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 140%;
+    transition: ease-in-out 0.3s;
+}
+
+
+.option:hover {
+    background-color:#eeffea
+}
+.option.selected {
+    background-color: #eeffea;
+    color: #000; 
+    border: 2px solid var(--second-bg-color);
+
+
+}
 
 
 /* approve quiz page */
@@ -834,10 +906,33 @@ a{
         display: flex;
         flex-direction: column;
     }
+    .create-quiz-page{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
     
 }
 
 
+@media (max-width:700px) {
+
+    .create-quiz-page .col2{
+        width: 100%;
+      display: inline;
+      border: none;
+      margin-top: 100px;
+    }
+    .create-quiz-page .col2 .container{
+        width:200%;
+       
+        
+    }
+    .col3{
+        margin-top: 50px;
+        text-align: left;
+    }
+}
 
 
 
